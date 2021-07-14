@@ -27,7 +27,7 @@ To get a broad representation of weather across the globe where our customers ma
 
 The Python citipy Module was used to find the nearest city to each of these locations. Since some points would have the same nearest city, duplicates were collapsed to a single entry. This process yielded 782 randomly-selected cities across the globe.
 
-As a point of reference, the names and countries of the cities returned correspond to a version of the Maxmind Free World Cities Database retrieved and archived in 2016 that is incorporated in the citypy internals as `worldcities.csv`. `worldcities.csv` contains discrete Latitude and Longitude point locations for 46,832 unique human-inhabitated settlements in 208 countries, on Earth, with 2016 populations greater than 500.
+As a point of reference, the names and countries of the cities returned correspond to a version of the Maxmind Free World Cities Database retrieved and archived in 2016 that is incorporated in the citypy internals as `worldcities.csv`. `worldcities.csv` contains discrete Latitude and Longitude point locations for 46,832 unique human-inhabited settlements in 208 countries, on Earth, with 2016 populations greater than 500.
 
 These cities in turn were correlated to cities having available Current Weather data from OpenWeather. Current Weather was obtained for 713 Cities on July 13, 2021.
 
