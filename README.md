@@ -59,8 +59,14 @@ Figure 2: Clicked Markers Example
 
 Taking this idea even further, customers can specify 4 nearby cities within a given country to map out a driving loop between them.
 
-With these 4 locations as inputs, the Google Maps Directions API is consulted to generate a set of directions for a driving loop, as can be seen below in Figure 3.
+With these 4 locations as inputs, the Google Maps Directions API is consulted to generate a set of directions for a driving loop, as can be seen below in Figure 3. In this case, the 4 cities are: Valdosta, Georgia (US), Lynn Haven, Florida (US), Opelousas, Louisiana (US), and Russell, Alabama (US).
 
 Figure 3: Example Driving Loop
 
 ![Figure 3](Vacation_Itinerary/WeatherPy_travel_map.png "Figure 3")
+
+While on their journey, if a customer desires to re-check the Hotel or Weather Conditions for any of their 4 waypoints, there is an additional map they can consult, as can be seen below in Figure 4.
+
+Figure 4: Waypoint Hotel and Weather Information
+
+![Figure 4](Vacation_Itinerary/WeatherPy_travel_map_markers.png "Figure 4")
