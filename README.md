@@ -23,7 +23,7 @@ The feedstock data for this project relies on Commercial Providers at the Back E
 
 ## Weather Data Collection (Weather_Database)
 
-To get a good overall representation of weather across the globe where our customers may be traveling, a test set of 2,000 randomly-generated Latitude and Longitude locations were generated.
+To get a good overall representation of weather across the globe where our customers may desire to travel, a test set of 2,000 randomly-generated Latitude and Longitude locations were generated.
 
 The Python citipy Module was used to find the nearest city to each of these locations, yielding 782 randomly-selected cities across the globe.
 
@@ -38,9 +38,11 @@ In a future, live product scenario, the OpenWeather API would be directly mated 
 
 Now, the exciting part! Among the 713 potential destinations, our customers are able to specify a preference for Maximum and Minimum preferred temperatures during their vacation. During the testing phase, we have done this for them with a Minimum trip temperature of 75 deg F and Maximum trip temperature of 90 deg F.
 
-Once selected, the Google Maps Places API is consulted to find the Nearest Hotel for each city that meets the criteria. If a Hotel is not found for a given city, it is dropped from the results. In our test case, there were 257 remaining to choose from across the Globe.
+Once selected, the Google Maps Places API is consulted to find the Nearest Hotel for each city that meets the criteria. If a Hotel is not found for a given city, it is dropped from the results. In our test case, there were 257 remaining to choose from.
 
-These potentials are displayed on a clickable, user-interactive Google Map with Clickable Markers. Upon selection, a brief description is returned including the Hotel Name, City Name, Country, and Current Weather.
+These potentials are then displayed on a clickable, user-interactive Google Map with Markers. On click, a brief description is displayed, including the Hotel Name, City Name, Country, and Current Weather.
+
+An idea of what this looks like can be seen below in Figures 1 and 2:
 
 
 ## Travel Itinerary Map (Vacation_Itinerary)
