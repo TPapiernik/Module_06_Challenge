@@ -40,7 +40,7 @@ In a future, live product scenario, the OpenWeather API would be directly mated 
 
 Now, the exciting part! Among the 713 potential destinations, our customers are able to specify a preference for Maximum and Minimum preferred temperatures during their vacation to aid in their search. During the testing phase, we have done this for them with a Minimum trip temperature of 75 deg F and Maximum trip temperature of 90 deg F.
 
-Once selected, the Google Maps Places API is consulted to find the Nearest Hotel for each city that meets the criteria. If a Hotel is not found for a given city, it is dropped from the results. In our test case, there were 257 remaining temperate City+Hotel Combinations to choose from.
+Once selected, the Google Maps Places API is consulted to find the Nearest Hotel within a 5,000 Meter radius of each city that meets the criteria. If a Hotel is not found for a given city, it is dropped from the results. In our test case, there were 627 City+Hotel Combinations to choose from, 257 of which fell within the previously specified temperature range.
 
 These potentials are then displayed on a clickable, user-interactive Google Map with Markers. On click, a brief description is displayed, including the Hotel Name, City Name, Country, and Current Weather.
 
@@ -70,3 +70,7 @@ While on their journey, if a customer desires to re-check the Hotel or Weather C
 Figure 4: Waypoint Hotel and Weather Information
 
 ![Figure 4](Vacation_Itinerary/WeatherPy_travel_map_markers.png "Figure 4")
+
+## Moving Forward
+
+The PlanMyTrip App is still in development. One suggestion to modify the internal algorithm is to perform the Google Places API Hotel Search *before* filtering by Temperature Range. This will result in a higher number of API Requests initially, but the results can be stored locally in memory and re-filtered according to any updated user-specified Temperature Ranges.
